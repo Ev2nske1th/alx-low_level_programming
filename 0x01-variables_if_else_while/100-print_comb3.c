@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print all different combinations of two digits
  * in ascending order, separated by a comma followed by a space
