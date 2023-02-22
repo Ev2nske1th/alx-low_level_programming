@@ -6,7 +6,6 @@
  * followed by a new line
  * @n: print from this number
  */
-
 void print_t0_98(int n)
 {
 	int i, j;
