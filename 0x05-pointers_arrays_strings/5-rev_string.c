@@ -8,6 +8,7 @@
  *
  * Return: Always 0 (success)
  */
+
 void rev_string(char *s)
 {
 	int l, i;
