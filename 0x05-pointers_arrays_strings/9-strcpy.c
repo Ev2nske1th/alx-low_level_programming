@@ -7,6 +7,7 @@
  *
  * Return: destination
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int r = 0;
