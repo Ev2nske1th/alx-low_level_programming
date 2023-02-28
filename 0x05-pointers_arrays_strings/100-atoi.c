@@ -6,6 +6,7 @@
  *
  * Return: integer value
  */
+
 int _atoi(char *s)
 {
 	int sign = 1;
