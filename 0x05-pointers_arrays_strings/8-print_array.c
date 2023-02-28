@@ -8,7 +8,6 @@
  *
  * Return: nothing
  */
-
 void print_array(int *a, int n)
 {
 	int r;
