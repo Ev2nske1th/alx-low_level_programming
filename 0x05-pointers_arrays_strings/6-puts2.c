@@ -8,6 +8,7 @@
  *
  * Return: Always 0 (success)
  */
+
 void puts2(char *str)
 {
 	int i = 0;
