@@ -6,6 +6,7 @@
  * @str: string to be changed
  * Return: address to the string
  */
+
 char *string_toupper(char *str)
 {
 	int i = 0;
