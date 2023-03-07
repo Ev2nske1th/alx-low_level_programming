@@ -7,6 +7,7 @@
  *
  * Return: number of bytes in s from accept
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
