@@ -7,6 +7,7 @@
  *
  * Return: pointer of an array
  */
+
 char *_strdup(char *str)
 {
 	char *e;
