@@ -14,6 +14,7 @@ typedef struct dog  dog_t;
  * @owner: own: struct called "dog" that stores its name, its age
  * and the name of its owner
  */
+
 struct dog
 {
 	char *name;
