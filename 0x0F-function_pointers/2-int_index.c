@@ -10,7 +10,6 @@
  * function does not return0. if no elements matches
  * return -1, if size <=0, return 1
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
