@@ -8,7 +8,6 @@
  *
  * Return: Always 0
  */
-
 int main(int argc, char *argv[])
 {
 	char *opc = (char *) main;
