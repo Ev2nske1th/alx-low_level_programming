@@ -9,7 +9,6 @@
  *
  * Return: 0 if n == 0, else return n
  */
-
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ptr;
