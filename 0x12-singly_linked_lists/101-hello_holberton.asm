@@ -1,5 +1,6 @@
 ; Declare needed C  functions
 
+
 	extern	printf		; the C function, to be called
 
 	section .data		; Data section, initialized variables
