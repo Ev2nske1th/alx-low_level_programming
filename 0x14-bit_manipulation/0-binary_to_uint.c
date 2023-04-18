@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
- * binary_to_uint- convert binary to unsigned int
+ * binary_to_uint- binary to unsigned int
  * @b: binary
+ *
  * Return: unsigned int
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 
 	int night = 0, j;
+
 	unsigned int number = 0, non_binary = 0;
 
 	if (b == NULL)
