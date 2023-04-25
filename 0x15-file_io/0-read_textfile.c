@@ -4,12 +4,13 @@
 #include "main.h"
 
 /**
- * read_textfile - reads and prints from a file
- * @filename: path to file
+ * read_textfile - prints from a file
+ *
+ * @filename: the path to a file
  * @letters: chars to read
- * Return: chars read
+ *
+ * Return: chars
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -18,6 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
+
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
@@ -26,6 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	buff = malloc(sizeof(char) * letters);
+
 	if (!buff)
 	{
 		close(fd);
@@ -42,7 +45,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	r = write(STDOUT_FILENO, buff, bytes);
-
 	if (r == -1)
 	{
 		close(fd);
