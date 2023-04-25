@@ -4,11 +4,14 @@
 #include "main.h"
 
 /**
- * create_file - append to file
- * @filename: path to file
+ * create_file - append to a file
+ *
+ * @filename: path to the file
  * @text_content: content
- * Return: chars read
+ *
+ * Return: chars
  */
+
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
@@ -21,6 +24,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
+
 	if (fd == -1)
 		return (-1);
 	if (!text_content)
@@ -30,12 +34,14 @@ int create_file(const char *filename, char *text_content)
 	}
 	size = _strlen(text_content);
 	mem = malloc(sizeof(char) * size);
+
 	if (!mem)
 	{
 		close(fd);
 		return (-1);
 	}
 	w = write(fd, text_content, size);
+
 	if (w == -1)
 	{
 		close(fd);
@@ -49,12 +55,10 @@ int create_file(const char *filename, char *text_content)
 
 /**
  * _strlen - len
- *
  * @s: is a pointer to a char
  *
  * Return: Always 0.
  */
-
 int _strlen(const char *s)
 {
 	int i = 0;
