@@ -4,12 +4,13 @@
 #include "main.h"
 
 /**
- * append_text_to_file - apends text to file
- * @filename: path to file
+ * append_text_to_file - apends text to a  file
+ *
+ * @filename: the path to a file
  * @text_content: content
+ *
  * Return: 1 or -1
  */
-
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
@@ -20,7 +21,6 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 
 	fd = open(filename, O_WRONLY | O_APPEND);
-
 	if (fd == -1)
 		return (-1);
 
@@ -32,7 +32,6 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	size = _strlen(text_content);
 	w = write(fd, text_content, size);
-
 	if (w == -1)
 	{
 		close(fd);
@@ -44,12 +43,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 /**
  * _strlen - len
- *
- * @s: is a pointer to a char
+ * @s: a pointer to a char
  *
  * Return: Always 0.
  */
-
 int _strlen(const char *s)
 {
 	int i = 0;
